@@ -1,6 +1,6 @@
 package com.eemarisademello.eletiva_geotec.controller;
 
-import com.eemarisademello.eletiva_geotec.dto.UserDTO;
+import com.eemarisademello.eletiva_geotec_client.dto.UserDTO;
 import com.eemarisademello.eletiva_geotec.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

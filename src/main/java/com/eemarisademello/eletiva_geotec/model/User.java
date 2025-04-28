@@ -3,7 +3,7 @@ package com.eemarisademello.eletiva_geotec.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import com.eemarisademello.eletiva_geotec.dto.UserDTO;
+import com.eemarisademello.eletiva_geotec_client.dto.UserDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
