@@ -2,6 +2,7 @@ package com.eemarisademello.eletiva_geotec.service;
 
 import com.eemarisademello.eletiva_geotec.converter.DTOConverter;
 import com.eemarisademello.eletiva_geotec_client.dto.UserDTO;
+import com.eemarisademello.eletiva_geotec_client.exception.UserNotFoundException;
 import com.eemarisademello.eletiva_geotec.model.User;
 import com.eemarisademello.eletiva_geotec.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -29,7 +30,7 @@ public class UserService {
 
     public UserDTO findById(long userId){
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> new UserNotFoundException());
         return DTOConverter.userToDTO(user);
     }
 
